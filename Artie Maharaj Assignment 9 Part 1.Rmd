@@ -5,16 +5,24 @@ data: April 14, 2020
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+This is Part 1 of Assignment 9
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+1. Create a graph to compare the PTSD scores of women who suffered childhood sexual abuse to those who did not suffer childhood sexual abuse. 
 
 ```{r}
-plot(cars)
+
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+2. Create a graph to compare the childhood physical abuse scores of women who suffered childhood sexual abuse to those who did not suffer childhood sexual abuse. 
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+```{r}
+
+```
+
+3. Create a scatterplot that related PTSD scores ( the response variable) to childhood physical abuse scores(the explanatory variable). Use different types of points and colors to differentiate between the women who suffered childhood sexual abuse and those who did not suffer childhood sexual abuse. Put two linear regression lines on your plot to relate PTSD to childhood physical abuse separately for those who suffered childhod sexual abuse and those who did not. Use the same color as the related points for the regression lines to make it obvious which points relate to whihc groups. 
+
+```{r}
+
+```
+
