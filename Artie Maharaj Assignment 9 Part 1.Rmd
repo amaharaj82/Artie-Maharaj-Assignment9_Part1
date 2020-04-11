@@ -14,14 +14,17 @@ library(tidyverse)
 abuse.data <- read.csv("abuse data.csv")
 
 ggplot(abuse.data, aes(x = csa, y = ptsd)) +
-  geom_boxplot(color="blue")
+  geom_boxplot(color="blue")+
+labs(x= "Childhood Sexual Abuse", y= "PTSD Score")
 ```
 
 
 2. Create a graph to compare the childhood physical abuse scores of women who suffered childhood sexual abuse to those who did not suffer childhood sexual abuse. 
 
 ```{r}
-
+ggplot(abuse.data, aes(x = csa, y = cpa)) +
+  geom_boxplot(color = "purple" )+
+labs(x= "Childhood Sexual Abuse", y= "Childhood Physical Abuse")
 ```
 
 3. Create a scatterplot that related PTSD scores ( the response variable) to childhood physical abuse scores(the explanatory variable). Use different types of points and colors to differentiate between the women who suffered childhood sexual abuse and those who did not suffer childhood sexual abuse. Put two linear regression lines on your plot to relate PTSD to childhood physical abuse separately for those who suffered childhod sexual abuse and those who did not. Use the same color as the related points for the regression lines to make it obvious which points relate to whihc groups. 
