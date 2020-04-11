@@ -10,7 +10,11 @@ This is Part 1 of Assignment 9
 1. Create a graph to compare the PTSD scores of women who suffered childhood sexual abuse to those who did not suffer childhood sexual abuse. 
 
 ```{r}
+library(tidyverse)
+abuse.data <- read.csv("abuse data.csv")
 
+ggplot(abuse.data, aes(x = csa, y = ptsd)) +
+  geom_boxplot(color="blue")
 ```
 
 
