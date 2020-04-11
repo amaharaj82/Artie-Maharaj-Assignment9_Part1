@@ -30,6 +30,10 @@ labs(x= "Childhood Sexual Abuse", y= "Childhood Physical Abuse")
 3. Create a scatterplot that related PTSD scores ( the response variable) to childhood physical abuse scores(the explanatory variable). Use different types of points and colors to differentiate between the women who suffered childhood sexual abuse and those who did not suffer childhood sexual abuse. Put two linear regression lines on your plot to relate PTSD to childhood physical abuse separately for those who suffered childhod sexual abuse and those who did not. Use the same color as the related points for the regression lines to make it obvious which points relate to whihc groups. 
 
 ```{r}
-
+ggplot(subset(abuse.data, csa == "Abused" | csa == "NotAbused"),
+       aes(x = cpa, y = ptsd, color = csa)) +
+  geom_point() +
+  stat_smooth(method = "lm", se = FALSE)+
+  labs(x= "Childhood Physical Abuse Score", y = "PTSD Score")
 ```
 
